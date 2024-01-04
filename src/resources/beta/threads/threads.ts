@@ -1,12 +1,12 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import { isRequestOptions } from 'openai/core';
-import * as ThreadsAPI from 'openai/resources/beta/threads/threads';
-import * as Shared from 'openai/resources/shared';
-import * as MessagesAPI from 'openai/resources/beta/threads/messages/messages';
-import * as RunsAPI from 'openai/resources/beta/threads/runs/runs';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import { isRequestOptions } from '@thoughtindustries/openai/core';
+import * as ThreadsAPI from '@thoughtindustries/openai/resources/beta/threads/threads';
+import * as Shared from '@thoughtindustries/openai/resources/shared';
+import * as MessagesAPI from '@thoughtindustries/openai/resources/beta/threads/messages/messages';
+import * as RunsAPI from '@thoughtindustries/openai/resources/beta/threads/runs/runs';
 
 export class Threads extends APIResource {
   runs: RunsAPI.Runs = new RunsAPI.Runs(this._client);

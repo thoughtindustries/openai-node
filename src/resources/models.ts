@@ -1,9 +1,9 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import * as ModelsAPI from 'openai/resources/models';
-import { Page } from 'openai/pagination';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import * as ModelsAPI from '@thoughtindustries/openai/resources/models';
+import { Page } from '@thoughtindustries/openai/pagination';
 
 export class Models extends APIResource {
   /**

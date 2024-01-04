@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { toFile, type ResponseLike } from 'openai/uploads';
-import { File } from 'openai/_shims/index';
+import { toFile, type ResponseLike } from '@thoughtindustries/openai/uploads';
+import { File } from '@thoughtindustries/openai/_shims/index';
 
 class MyClass {
   name: string = 'foo';

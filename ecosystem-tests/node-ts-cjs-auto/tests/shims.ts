@@ -1,4 +1,4 @@
-import * as shims from 'openai/_shims/index';
+import * as shims from '@thoughtindustries/openai/_shims/index';
 import * as fd from 'formdata-node';
 
 test('openai/shims/node', () => {

@@ -137,7 +137,7 @@ async function postprocess() {
 
     if (file.endsWith('.d.ts')) {
       // work around bad tsc behavior
-      // if we have `import { type Readable } from 'openai/_shims/index'`,
+      // if we have `import { type Readable } from '@thoughtindustries/openai/_shims/index'`,
       // tsc sometimes replaces `Readable` with `import("stream").Readable` inline
       // in the output .d.ts
       transformed = transformed.replace(/import\("stream"\).Readable/g, 'Readable');

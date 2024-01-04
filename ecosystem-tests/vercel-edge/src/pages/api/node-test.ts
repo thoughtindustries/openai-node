@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { distance } from 'fastest-levenshtein';
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 import { uploadWebApiTestCases } from '../../uploadWebApiTestCases';
 
 type Test = { description: string; handler: () => Promise<void> };

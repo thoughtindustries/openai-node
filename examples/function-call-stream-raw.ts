@@ -1,12 +1,12 @@
 #!/usr/bin/env -S npm run tsn -T
 
 import util from 'util';
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 import {
   ChatCompletionMessage,
   ChatCompletionChunk,
   ChatCompletionMessageParam,
-} from 'openai/resources/chat';
+} from '@thoughtindustries/openai/resources/chat';
 
 // gets API Key from environment variable OPENAI_API_KEY
 const openai = new OpenAI();

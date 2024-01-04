@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 export const config = {
   runtime: 'edge',

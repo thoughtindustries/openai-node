@@ -1,8 +1,8 @@
 #!/usr/bin/env -S npm run tsn -T
 
-import OpenAI from 'openai';
-import { RunnableToolFunctionWithParse } from 'openai/lib/RunnableFunction';
-import { JSONSchema } from 'openai/lib/jsonschema';
+import OpenAI from '@thoughtindustries/openai';
+import { RunnableToolFunctionWithParse } from '@thoughtindustries/openai/lib/RunnableFunction';
+import { JSONSchema } from '@thoughtindustries/openai/lib/jsonschema';
 import { ZodSchema, z } from 'zod';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 

@@ -1,18 +1,18 @@
-import * as Core from 'openai/core';
-import { OpenAIError, APIUserAbortError } from 'openai/error';
+import * as Core from '@thoughtindustries/openai/core';
+import { OpenAIError, APIUserAbortError } from '@thoughtindustries/openai/error';
 import {
   Completions,
   type ChatCompletion,
   type ChatCompletionChunk,
   type ChatCompletionCreateParams,
   type ChatCompletionCreateParamsBase,
-} from 'openai/resources/chat/completions';
+} from '@thoughtindustries/openai/resources/chat/completions';
 import {
   AbstractChatCompletionRunner,
   type AbstractChatCompletionRunnerEvents,
 } from './AbstractChatCompletionRunner';
-import { type ReadableStream } from 'openai/_shims/index';
-import { Stream } from 'openai/streaming';
+import { type ReadableStream } from '@thoughtindustries/openai/_shims/index';
+import { Stream } from '@thoughtindustries/openai/streaming';
 
 export interface ChatCompletionStreamEvents extends AbstractChatCompletionRunnerEvents {
   content: (contentDelta: string, contentSnapshot: string) => void;

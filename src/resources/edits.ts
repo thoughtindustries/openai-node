@@ -1,9 +1,9 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import * as EditsAPI from 'openai/resources/edits';
-import * as CompletionsAPI from 'openai/resources/completions';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import * as EditsAPI from '@thoughtindustries/openai/resources/edits';
+import * as CompletionsAPI from '@thoughtindustries/openai/resources/completions';
 
 export class Edits extends APIResource {
   /**

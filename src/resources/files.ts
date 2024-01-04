@@ -1,14 +1,14 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import { isRequestOptions } from 'openai/core';
-import { type Response } from 'openai/_shims/index';
-import { sleep } from 'openai/core';
-import { APIConnectionTimeoutError } from 'openai/error';
-import * as FilesAPI from 'openai/resources/files';
-import { type Uploadable, multipartFormRequestOptions } from 'openai/core';
-import { Page } from 'openai/pagination';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import { isRequestOptions } from '@thoughtindustries/openai/core';
+import { type Response } from '@thoughtindustries/openai/_shims/index';
+import { sleep } from '@thoughtindustries/openai/core';
+import { APIConnectionTimeoutError } from '@thoughtindustries/openai/error';
+import * as FilesAPI from '@thoughtindustries/openai/resources/files';
+import { type Uploadable, multipartFormRequestOptions } from '@thoughtindustries/openai/core';
+import { Page } from '@thoughtindustries/openai/pagination';
 
 export class Files extends APIResource {
   /**

@@ -1,5 +1,5 @@
-import { createResponseHeaders } from 'openai/core';
-import { Headers } from 'openai/_shims/index';
+import { createResponseHeaders } from '@thoughtindustries/openai/core';
+import { Headers } from '@thoughtindustries/openai/_shims/index';
 
 describe('response parsing', () => {
   // TODO: test unicode characters

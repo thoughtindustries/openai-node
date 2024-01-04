@@ -1,18 +1,24 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import { ChatCompletionRunner, ChatCompletionFunctionRunnerParams } from 'openai/lib/ChatCompletionRunner';
-export { ChatCompletionRunner, ChatCompletionFunctionRunnerParams } from 'openai/lib/ChatCompletionRunner';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import {
+  ChatCompletionRunner,
+  ChatCompletionFunctionRunnerParams,
+} from '@thoughtindustries/openai/lib/ChatCompletionRunner';
+export {
+  ChatCompletionRunner,
+  ChatCompletionFunctionRunnerParams,
+} from '@thoughtindustries/openai/lib/ChatCompletionRunner';
 import {
   ChatCompletionStreamingRunner,
   ChatCompletionStreamingFunctionRunnerParams,
-} from 'openai/lib/ChatCompletionStreamingRunner';
+} from '@thoughtindustries/openai/lib/ChatCompletionStreamingRunner';
 export {
   ChatCompletionStreamingRunner,
   ChatCompletionStreamingFunctionRunnerParams,
-} from 'openai/lib/ChatCompletionStreamingRunner';
-import { BaseFunctionsArgs } from 'openai/lib/RunnableFunction';
+} from '@thoughtindustries/openai/lib/ChatCompletionStreamingRunner';
+import { BaseFunctionsArgs } from '@thoughtindustries/openai/lib/RunnableFunction';
 export {
   RunnableFunction,
   RunnableFunctions,
@@ -20,13 +26,19 @@ export {
   RunnableFunctionWithoutParse,
   ParsingFunction,
   ParsingToolFunction,
-} from 'openai/lib/RunnableFunction';
-import { ChatCompletionToolRunnerParams } from 'openai/lib/ChatCompletionRunner';
-export { ChatCompletionToolRunnerParams } from 'openai/lib/ChatCompletionRunner';
-import { ChatCompletionStreamingToolRunnerParams } from 'openai/lib/ChatCompletionStreamingRunner';
-export { ChatCompletionStreamingToolRunnerParams } from 'openai/lib/ChatCompletionStreamingRunner';
-import { ChatCompletionStream, type ChatCompletionStreamParams } from 'openai/lib/ChatCompletionStream';
-export { ChatCompletionStream, type ChatCompletionStreamParams } from 'openai/lib/ChatCompletionStream';
+} from '@thoughtindustries/openai/lib/RunnableFunction';
+import { ChatCompletionToolRunnerParams } from '@thoughtindustries/openai/lib/ChatCompletionRunner';
+export { ChatCompletionToolRunnerParams } from '@thoughtindustries/openai/lib/ChatCompletionRunner';
+import { ChatCompletionStreamingToolRunnerParams } from '@thoughtindustries/openai/lib/ChatCompletionStreamingRunner';
+export { ChatCompletionStreamingToolRunnerParams } from '@thoughtindustries/openai/lib/ChatCompletionStreamingRunner';
+import {
+  ChatCompletionStream,
+  type ChatCompletionStreamParams,
+} from '@thoughtindustries/openai/lib/ChatCompletionStream';
+export {
+  ChatCompletionStream,
+  type ChatCompletionStreamParams,
+} from '@thoughtindustries/openai/lib/ChatCompletionStream';
 
 export class Completions extends APIResource {
   /**

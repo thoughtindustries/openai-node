@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI, { toFile } from 'openai';
-import { TranscriptionCreateParams } from 'openai/resources/audio';
+import OpenAI, { toFile } from '@thoughtindustries/openai';
+import { TranscriptionCreateParams } from '@thoughtindustries/openai/resources/audio';
 
 export const config = {
   runtime: 'edge',

@@ -1,7 +1,7 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import { APIResource } from 'openai/resource';
-import * as JobsAPI from 'openai/resources/fine-tuning/jobs';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import * as JobsAPI from '@thoughtindustries/openai/resources/fine-tuning/jobs';
 
 export class FineTuning extends APIResource {
   jobs: JobsAPI.Jobs = new JobsAPI.Jobs(this._client);

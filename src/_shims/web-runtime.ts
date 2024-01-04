@@ -9,7 +9,7 @@ export function getRuntime({ manuallyImported }: { manuallyImported?: boolean } 
   const recommendation =
     manuallyImported ?
       `You may need to use polyfills`
-    : `Add one of these imports before your first \`import … from 'openai'\`:
+    : `Add one of these imports before your first \`import … from '@thoughtindustries/openai'\`:
 - \`import 'openai/shims/node'\` (if you're running on Node)
 - \`import 'openai/shims/web'\` (otherwise)
 `;

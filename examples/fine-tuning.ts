@@ -8,8 +8,8 @@
  */
 
 import fs from 'fs';
-import OpenAI from 'openai';
-import { FineTuningJobEvent } from 'openai/resources/fine-tuning';
+import OpenAI from '@thoughtindustries/openai';
+import { FineTuningJobEvent } from '@thoughtindustries/openai/resources/fine-tuning';
 
 // Gets the API Key from the environment variable `OPENAI_API_KEY`
 const client = new OpenAI();

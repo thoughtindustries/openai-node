@@ -1,12 +1,12 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import { isRequestOptions } from 'openai/core';
-import * as RunsAPI from 'openai/resources/beta/threads/runs/runs';
-import * as Shared from 'openai/resources/shared';
-import * as StepsAPI from 'openai/resources/beta/threads/runs/steps';
-import { CursorPage, type CursorPageParams } from 'openai/pagination';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import { isRequestOptions } from '@thoughtindustries/openai/core';
+import * as RunsAPI from '@thoughtindustries/openai/resources/beta/threads/runs/runs';
+import * as Shared from '@thoughtindustries/openai/resources/shared';
+import * as StepsAPI from '@thoughtindustries/openai/resources/beta/threads/runs/steps';
+import { CursorPage, type CursorPageParams } from '@thoughtindustries/openai/pagination';
 
 export class Runs extends APIResource {
   steps: StepsAPI.Steps = new StepsAPI.Steps(this._client);

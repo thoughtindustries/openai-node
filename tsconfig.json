@@ -9,9 +9,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "openai/_shims/auto/*": ["src/_shims/auto/*-node"],
-      "openai/*": ["src/*"],
-      "openai": ["src/index.ts"],
+      "@thoughtindustries/openai/_shims/auto/*": ["src/_shims/auto/*-node"],
+      "@thoughtindustries/openai/*": ["src/*"],
+      "@thoughtindustries/openai": ["src/index.ts"],
       "digest-fetch": ["./typings/digest-fetch"]
     },
     "noEmit": true,

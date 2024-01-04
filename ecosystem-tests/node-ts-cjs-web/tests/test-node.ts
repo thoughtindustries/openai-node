@@ -1,7 +1,7 @@
 import 'openai/shims/web';
-import OpenAI, { toFile } from 'openai';
+import OpenAI, { toFile } from '@thoughtindustries/openai';
 import { distance } from 'fastest-levenshtein';
-import { ChatCompletion } from 'openai/resources/chat/completions';
+import { ChatCompletion } from '@thoughtindustries/openai/resources/chat/completions';
 
 const url = 'https://audio-samples.github.io/samples/mp3/blizzard_biased/sample-1.mp3';
 const filename = 'sample-1.mp3';

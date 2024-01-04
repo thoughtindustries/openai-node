@@ -3,9 +3,9 @@
  */
 import 'whatwg-fetch';
 import 'openai/shims/web';
-import OpenAI, { toFile } from 'openai';
+import OpenAI, { toFile } from '@thoughtindustries/openai';
 import { distance } from 'fastest-levenshtein';
-import { ChatCompletion } from 'openai/resources/chat/completions';
+import { ChatCompletion } from '@thoughtindustries/openai/resources/chat/completions';
 // @ts-ignore
 import { TextEncoder } from 'text-encoding-polyfill';
 

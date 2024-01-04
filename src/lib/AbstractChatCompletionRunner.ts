@@ -1,5 +1,5 @@
-import * as Core from 'openai/core';
-import { type CompletionUsage } from 'openai/resources/completions';
+import * as Core from '@thoughtindustries/openai/core';
+import { type CompletionUsage } from '@thoughtindustries/openai/resources/completions';
 import {
   type Completions,
   type ChatCompletion,
@@ -7,8 +7,8 @@ import {
   type ChatCompletionMessageParam,
   type ChatCompletionCreateParams,
   type ChatCompletionTool,
-} from 'openai/resources/chat/completions';
-import { APIUserAbortError, OpenAIError } from 'openai/error';
+} from '@thoughtindustries/openai/resources/chat/completions';
+import { APIUserAbortError, OpenAIError } from '@thoughtindustries/openai/error';
 import {
   type RunnableFunction,
   isRunnableFunctionWithParse,

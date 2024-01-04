@@ -32,7 +32,7 @@ The full API of this library can be found in [api.md file](api.md) along with ma
 
 <!-- prettier-ignore -->
 ```js
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const openai = new OpenAI({
   apiKey: process.env['OPENAI_API_KEY'], // This is the default and can be omitted
@@ -53,7 +53,7 @@ main();
 We provide support for streaming responses using Server Sent Events (SSE).
 
 ```ts
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const openai = new OpenAI();
 
@@ -80,7 +80,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const openai = new OpenAI({
   apiKey: process.env['OPENAI_API_KEY'], // This is the default and can be omitted
@@ -107,7 +107,7 @@ Documentation for each method, request param, and response field are available i
 This library provides several conveniences for streaming chat completions, for example:
 
 ```ts
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const openai = new OpenAI();
 
@@ -159,7 +159,7 @@ If you pass `tool_choice: {function: {name: …}}` instead of `auto`,
 it returns immediately after calling that function (and only loops to auto-recover parsing errors).
 
 ```ts
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const client = new OpenAI();
 
@@ -239,7 +239,7 @@ Request parameters that correspond to file uploads can be passed in many differe
 ```ts
 import fs from 'fs';
 import fetch from 'node-fetch';
-import OpenAI, { toFile } from 'openai';
+import OpenAI, { toFile } from '@thoughtindustries/openai';
 
 const openai = new OpenAI();
 
@@ -420,7 +420,7 @@ add the following import before your first import `from "OpenAI"`:
 // Tell TypeScript and the package to use the global web fetch instead of node-fetch.
 // Note, despite the name, this does not add any polyfills, but expects them to be provided if needed.
 import 'openai/shims/web';
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 ```
 
 To do the inverse, add `import "openai/shims/node"` (which does import polyfills).
@@ -431,7 +431,7 @@ which can be used to inspect or alter the `Request` or `Response` before/after e
 
 ```ts
 import { fetch } from 'undici'; // as one example
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 
 const client = new OpenAI({
   fetch: (url: RequestInfo, init?: RequestInfo): Response => {

@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import OpenAI from 'openai';
-import { APIUserAbortError } from 'openai';
-import { Headers } from 'openai/core';
+import OpenAI from '@thoughtindustries/openai';
+import { APIUserAbortError } from '@thoughtindustries/openai';
+import { Headers } from '@thoughtindustries/openai/core';
 import defaultFetch, { Response, type RequestInit, type RequestInfo } from 'node-fetch';
 
 describe('instantiate client', () => {

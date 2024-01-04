@@ -1,5 +1,5 @@
-import OpenAI from 'openai';
-import { OpenAIError } from 'openai/error';
+import OpenAI from '@thoughtindustries/openai';
+import { OpenAIError } from '@thoughtindustries/openai/error';
 import { PassThrough } from 'stream';
 import {
   ParsingToolFunction,
@@ -7,10 +7,10 @@ import {
   type ChatCompletionFunctionRunnerParams,
   ChatCompletionStreamingRunner,
   type ChatCompletionStreamingFunctionRunnerParams,
-} from 'openai/resources/beta/chat/completions';
-import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+} from '@thoughtindustries/openai/resources/beta/chat/completions';
+import type { ChatCompletionMessageParam } from '@thoughtindustries/openai/resources/chat/completions';
 
-import { type RequestInfo, type RequestInit } from 'openai/_shims/index';
+import { type RequestInfo, type RequestInit } from '@thoughtindustries/openai/_shims/index';
 import { Response } from 'node-fetch';
 import { isAssistantMessage } from './chatCompletionUtils';
 

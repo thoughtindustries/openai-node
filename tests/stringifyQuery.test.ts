@@ -1,4 +1,4 @@
-import { APIClient } from 'openai/core';
+import { APIClient } from '@thoughtindustries/openai/core';
 
 const { stringifyQuery } = APIClient.prototype as any;
 

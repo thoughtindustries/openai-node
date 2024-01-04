@@ -1,8 +1,8 @@
 import 'openai/shims/node.mjs';
-import OpenAI from 'openai';
+import OpenAI from '@thoughtindustries/openai';
 import { distance } from 'fastest-levenshtein';
-import { ChatCompletion } from 'openai/resources/chat/completions';
-import * as shims from 'openai/_shims/index';
+import { ChatCompletion } from '@thoughtindustries/openai/resources/chat/completions';
+import * as shims from '@thoughtindustries/openai/_shims/index';
 
 // The tests in this file don't typecheck with "moduleResolution": "node"
 

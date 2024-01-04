@@ -1,12 +1,12 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIPromise } from 'openai/core';
-import { APIResource } from 'openai/resource';
-import * as FineTunesAPI from 'openai/resources/fine-tunes';
-import * as FilesAPI from 'openai/resources/files';
-import { Page } from 'openai/pagination';
-import { Stream } from 'openai/streaming';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIPromise } from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import * as FineTunesAPI from '@thoughtindustries/openai/resources/fine-tunes';
+import * as FilesAPI from '@thoughtindustries/openai/resources/files';
+import { Page } from '@thoughtindustries/openai/pagination';
+import { Stream } from '@thoughtindustries/openai/streaming';
 
 export class FineTunes extends APIResource {
   /**

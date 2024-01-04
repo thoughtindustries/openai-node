@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless.
 
-import * as Core from 'openai/core';
-import { APIResource } from 'openai/resource';
-import { isRequestOptions } from 'openai/core';
-import * as FilesAPI from 'openai/resources/beta/assistants/files';
-import { CursorPage, type CursorPageParams } from 'openai/pagination';
+import * as Core from '@thoughtindustries/openai/core';
+import { APIResource } from '@thoughtindustries/openai/resource';
+import { isRequestOptions } from '@thoughtindustries/openai/core';
+import * as FilesAPI from '@thoughtindustries/openai/resources/beta/assistants/files';
+import { CursorPage, type CursorPageParams } from '@thoughtindustries/openai/pagination';
 
 export class Files extends APIResource {
   /**
